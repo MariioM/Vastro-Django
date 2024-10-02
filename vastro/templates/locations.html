@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block sectiontitle %}<h2>Mining Locations</h2>{% endblock sectiontitle %}
+{% block content %}
+<ul class="locations-list">
+    {% for location in locations%}
+        <li class="location-item">
+            {{location.name }}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock content %}

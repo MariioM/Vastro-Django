@@ -1,0 +1,35 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static '/res/css/styles.css' %}" /> 
+    
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo">VASTRO</div>
+        <div class="index-content">
+          <ul class="nav-items">
+            <li> <a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'locations' %}">Locations</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+          </ul>
+        </div>
+    </nav>
+    <main>
+      <div class="main-container">
+        {% block sectiontitle%} 
+        <h2></h2>
+        {% endblock sectiontitle %}
+        {% block content%} 
+        <p></p>
+        {% endblock content%}
+      </div>
+    </main>
+    
+  </body>
+</html>
