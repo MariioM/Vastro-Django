@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8e5b0173-44b4-4a10-b3cf-71a692f63e1a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/vastro-og",
+    "appService.deploySubpath": "."
+}

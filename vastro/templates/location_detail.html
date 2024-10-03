@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block sectiontitle %}
+<h2 class="pb-5"> Mining Location - {{location}} </h2>
+{% endblock sectiontitle %}
+{% block content %}
+<div class="d-flex justify-content-start flex-column">
+    <div class="d-flex flex-row gap-1">
+        <h5>System:</h4> <p class=""> {{location.system}} </p>
+    </div>
+    <div class="d-flex flex-row gap-1">
+        <h5>Minerals:</h4> <p class=""> {{location.mineral}} </p>
+    </div>
+</div>
+<a href="{% url 'location_form' location.pk %}">Update</a>
+<a href="{% url 'location_confirm_delete' location.pk %}">Delete</a>
+{% endblock content %}

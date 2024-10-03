@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block sectiontitle %}
+<h2>Mining Location</h2>
+{% endblock sectiontitle %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+{% endblock content %}
+
