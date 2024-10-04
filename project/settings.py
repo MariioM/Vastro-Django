@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ir&js^(yjm*p$y2j@62n(4@pf_h86&jgae-k4su8@lzhrp3wjj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','vastro-og.azurewebsites.net']
+ALLOWED_HOSTS = ['vastro.azurewebsites.net','127.0.0.1','localhost']
 
 
 
@@ -130,4 +130,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATIC_ROOT = BASE_DIR/'staticfiles'
+STATIC_ROOT = BASE_DIR/ 'staticfiles'
