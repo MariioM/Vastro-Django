@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ir&js^(yjm*p$y2j@62n(4@pf_h86&jgae-k4su8@lzhrp3wjj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','vastro-og.azurewebsites.net','0.0.0.0']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','vastro-og.azurewebsites.net']
 
 
 
