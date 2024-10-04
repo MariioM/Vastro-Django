@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'vastro.apps.VastroConfig',
     'crispy_forms',
-    'crispy_bootstrap5'
+    'crispy_bootstrap5',
+    'whitenoise.runserver_nostatic',
+
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
